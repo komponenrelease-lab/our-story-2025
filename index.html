@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 2025 Story: Ricca & Yosua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS / GAYA TAMPILAN --- */
+        :root {
+            --primary-color: #8e5b5b; /* Warna merah hati lembut */
+            --bg-color: #fcf5f3; /* Warna latar krem pink sangat muda */
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5em;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section (Bagian Pembuka) */
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('foto10.jpg'); /* Foto background pembuka */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 40px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .hero p.subtitle {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--primary-color);
+        }
+
+        .scroll-hint {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            animation: bounce 2s infinite;
+        }
+
+        /* Story Sections (Bagian Cerita per Foto) */
+        .story-section {
+            margin-bottom: 80px;
+            opacity: 0; /* Sembunyi dulu sebelum discroll */
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+
+        .story-section.muncul {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .photo-frame {
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(142, 91, 91, 0.15);
+            border: 3px solid #fff;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Bagian Ucapan Puitis */
+        .final-tribute {
+            background-color: #fff;
+            padding: 50px 30px;
+            margin: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            border: 1px solid rgba(142, 91, 91, 0.2);
+        }
+
+        .final-tribute h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .final-tribute p.poetic {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Audio Player sederhana */
+        audio {
+            width: 80%;
+            margin: 20px auto;
+            display: block;
+            opacity: 0.7;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 10px;">
+        <p style="font-size: 0.8rem; margin-bottom: 5px;">🎵 Putar musiknya dulu ya sayang...</p>
+        <audio controls autoplay loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung pemutar musik ini.
+        </audio>
+    </div>
+
+
+    <section class="hero">
+        <h1>Cerita Kita 2025</h1>
+        <p class="subtitle">Untuk istriku tercinta, Ricca Claudia.</p>
+        <p>Tahun ini adalah tahun yang luar biasa. Mari kita lihat kembali jejak langkah kaki kita...</p>
+        <div class="scroll-hint">Scroll ke bawah pelan-pelan ya ❤️</div>
+    </section>
+
+
+    <div class="container">
+        
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto1.jpg" alt="Awal Pertemuan">
+            </div>
+            <p>Di bawah langit yang sama, kisah kita bermula. Seperti melihat mentari pagi yang hangat, kehadiranmu menerangi hari-hariku sejak awal kita bertemu.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto2.jpg" alt="Prepare Prewed">
+            </div>
+            <p>Ingat saat kita bersiap melangkah ke jenjang ini? Sedikit gugup di depan cermin, tapi hati kita penuh kepastian. Aku tahu, aku memilih wanita yang tepat.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto3.jpg" alt="Bandara Surabaya">
+            </div>
+            <p>Bandara Surabaya jadi saksi bisu perjalanan kita. Ke manapun tujuannya, selama perginya berdua sama kamu, rasanya selalu seperti pulang ke rumah.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto4.jpg" alt="Jogging SLG">
+            </div>
+            <p>Momen sederhana seperti jogging pagi di SLG pun terasa istimewa. Bahagia itu sederhana, sesederhana duduk berdua di atas rumput setelah lelah berlari.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto5.jpg" alt="Pemberkatan">
+            </div>
+            <p>Hari yang paling bersejarah. Di altar GBI Getsemani, di hadapan Tuhan dan jemaat-Nya, janji suci kita ucapkan. Hari di mana 'aku' dan 'kamu' sah menjadi 'KITA'.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto6.jpg" alt="USG Pertama">
+            </div>
+            <p>Dan inilah keajaiban terbesar di tahun 2025. Puji Tuhan, setelah penantian dan doa, ada detak jantung kecil yang hadir di antara kita. Hadiah terindah dari Surga.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto7.jpg" alt="Perjuangan Hamil">
+            </div>
+            <p>Masa-masa perjuanganmu dimulai. Aku tahu ini tidak mudah. Meski Freshcare jadi teman setiamu saat mual menyerang, ketahuilah, bahu dan pelukanku akan selalu siap menjadi sandaran ternyamanmu.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto8.jpg" alt="USG Semarang">
+            </div>
+            <p>Sampai ke Semarang kita upayakan demi memastikan si kecil sehat. Melihat perkembangannya lewat USG Fetomaternal sungguh pengalaman yang tak terlupakan. Kita berjuang sama-sama ya, Ma.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto9.jpg" alt="Keluarga Besar">
+            </div>
+            <p>Kebahagiaan kita makin lengkap dengan hangatnya dukungan keluarga besar dari Kediri. Rumah kita dipenuhi tawa, doa, dan kasih sayang yang melimpah.</p>
+        </section>
+
+        <section class="story-section">
+            <div class="photo-frame">
+                <img src="foto10.jpg" alt="Natal dan Harapan">
+            </div>
+            <p>Inilah kita di penghujung tahun. Bersiap menyambut babak baru yang luar biasa. Tahun 2026, kita siap menyambut malaikat kecil kita dengan penuh sukacita. Kiranya berkat Tuhan senantiasa menyertai keluarga kecil kita.</p>
+        </section>
+
+
+        <section class="final-tribute story-section">
+            <h2>Terima Kasih, Istriku...</h2>
+            <p class="poetic">
+                Untuk Ricca Claudia, wanita terkuat yang kupunya.<br><br>
+                Terima kasih telah berjuang dengan begitu hebatnya sampai detik ini.<br>
+                Terima kasih telah rela tubuhmu berubah demi menjaga buah hati kita.<br>
+                Setiap rasa sakit dan tak nyaman yang kamu tahan dengan senyuman,<br>
+                adalah bukti betapa luasnya hatimu.<br><br>
+                Terima kasih tetap memilihku, mencintaiku, dan bertahan bersamaku.<br>
+                Perjalanan 2025 indah karena ada kamu di dalamnya.<br>
+                Mari kita tapaki 2026 dengan genggaman yang lebih erat.<br><br>
+                Aku mencintaimu, lebih dari kata-kata yang bisa kutuliskan di sini.<br>
+            </p>
+            <p style="margin-top: 30px;">❤️ Suamimu, Yosua.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Dibuat dengan penuh cinta untuk menyambut Tahun Baru 2026.<br>Forever & Always.</p>
+    </footer>
+
+
+    <script>
+        // --- JAVASCRIPT UNTUK EFEK SCROLL ---
+        // Kode ini membuat foto dan teks muncul pelan-pelan saat discroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3 // Muncul ketika 30% elemen terlihat
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('muncul');
+                    observer.unobserve(entry.target); // Stop mengamati setelah muncul
+                }
+            });
+        }, observerOptions);
+
+        // Targetkan semua elemen dengan class .story-section
+        document.querySelectorAll('.story-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
